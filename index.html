@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+background-image:  linear-gradient(90deg, rgba(159,157,157,1) 15%, rgba(255,255,255,1) 52%, rgba(121,121,121,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba(62,3,3,1) 100%);  ;
+background-size: cover;
+    
+
+}
+
+a{
+    text-decoration: none;
+    font-family: 'boho rainbow';
+}
+
+#wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+   
+}
+
+#section1{
+    width: 100vw;
+    min-height: 100vh;
+ 
+    
+}
+#section2{
+    width: 100vw;
+    min-height: 100vh;
+    margin-top: 150px;
+ 
+    background-color:red;
+}
+
+
+
+nav{
+    width: 100vw;
+    height: 15vh;
+
+
+    margin-top: 100px;
+    background-color:  rgb(217, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+
+#anchor1>a{
+    padding: 0 1vw;
+    color: black;
+    font-size: 1vw;
+}
+#img{
+    width: 100px;
+    height: inherit;
+    background-color: rgb(217, 217, 217);
+}
+
+#img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#anchor2>a{
+    padding: 0 1vw;
+    color: black;
+    font-size: 1vw;
+}
+
+#heading{
+    width: 100vw;
+
+    background-color:  rgb(217, 217, 217);;
+
+    overflow: hidden;
+    margin-top: 70px;
+}
+#heading>h1{
+    font-size: 2.2vw;
+    font-family: 'kremlin Bolshevik';
+    font-family: 'Carmine';
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+#box{
+
+    width: 100vw;
+    min-height: 100vh;
+    margin-top: 120px;
+    background-color: rgb(217, 217, 217);
+
+    position: relative;
+    overflow: hidden !important;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+/*     justify-content: space-evenly; */
+    justify-content: space-evenly;
+    
+  
+}
+
+.images{
+
+    width: 15%;
+    height: 70vh;
+    
+
+}
+
+#one{
+
+background-image: url("Cruelty-Free Skincare _ basedSKIN_.jpg");
+background-size: cover;
+background-position: 30% 0%;
+
+}
+
+#two{
+  
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#two_one{
+    height: 30vh;
+    width: 90%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#two_one>h3{
+    color: whitesmoke;
+    font-family: 'grifinito L';
+    font-size: 2.2vw;
+}
+   
+
+
+
+#two_two{
+    height: 30vh;
+    width: 90%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#two_two>h3{
+    color: whitesmoke;
+    font-family: 'grifinito L';
+    font-size: 2.2vw;
+}
+
+
+
+#vedio{
+    width: 50vw;
+    min-height: inherit;
+    
+  
+}
+#vedio>video{
+    width: 100%;
+    min-height: inherit;
+    object-fit: cover;
+    
+
+
+}
+
+#three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  background-color: whitesmoke;
+ 
+}
+#three_one{
+    height: 30vh;
+    width: 90%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#three_one>h3{
+    color: whitesmoke;
+    font-family: 'grifinito L';
+    font-size: 2.3vw;
+
+   
+
+}
+
+
+
+#three_two{
+    height: 30vh;
+    width: 90%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#three_two>h3{
+    color: whitesmoke;
+    font-family: 'grifinito L';
+    font-size: 2.3vw;
+}
+
+
+#four{
+    background-image: url("Портрет девушки.jpg");
+    background-size: cover;
+    background-position: 20% 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    #two,#three{
+        visibility: hidden;
+    }
+
+    
+    #anchor1>a{
+       
+       
+        font-size: 2vw;
+    }
+    #anchor2>a{
+        
+        
+        font-size: 2vw;
+    }
+
+    #heading{
+      
+    
+        background-color:  rgb(217, 217, 217);;
+        
+        margin-top: 70px;
+    }
+    #heading>h1{
+        font-size: 4.2vw;
+        padding: 1vw;
+        font-family: 'AGReverance';
+        font-weight: 500;
+        text-align: center;
+        
+    }
+    
+  }
+
+
+
+    </style>
+
+</head>
+<body>
+        <div id="wrapper">
+
+
+            <div id="section1">
+
+                <nav>
+                    <div id="anchor1">
+                        <a href="">Home</a>
+                        <a href="">Services</a>
+                    </div>
+                    <div id="img">
+                        <img src="cartier.png" alt="">
+                    </div>
+
+                    <div id="anchor2">
+                        <a href="">Pricing</a>
+                        <a href="">About</a>
+                    </div>
+                </nav>
+                        <div id="heading">
+                            <h1>Spain collection is your expert partner for deluxe bespoke travel experiences</h1>
+                            
+                        </div>
+                      
+
+                <div id="box">
+
+<!-- 
+                    <div id="one" class="images"></div> -->
+
+                    <div id="two"  class="images" >
+                        <div id="two_one">
+                            <h3>Giorgio Armani</h3>
+                        </div>
+                        <div id="two_two">
+                            <h3>Amal clooney</h3>
+                        </div>
+                    </div>
+
+                    <div id="vedio">
+                        <video src="cinema.mp4"  muted autoplay loop ></video>
+                    </div>
+
+                    <div id="three" class="images">
+                        <div id="three_one">
+                            <h3>Tom Ford</h3>
+                        </div>
+                        <div id="three_two">
+                            <h3>Christian Dior</h3>
+                        </div>
+                    </div>
+
+                 <!--    <div id="four"  class="images"> </div> -->
+
+                
+
+
+                </div><!--box-->
+
+            </div><!--section1-->
+
+ <!-- 
+           <div id="section2">
+
+
+            </div> -->
+ 
+</div><!--wrapper-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+        <script >
+            var k=gsap.timeline();
+
+k.to("#vedio",{
+
+    scrollTrigger:{
+        trigger:"#box",
+        scroller:"body",
+        start:"top top",
+        pin:"#box",
+      
+        
+        scrub:4,
+        
+        
+    
+
+    },
+    width:"200%",
+    scale:1.2,
+  
+    ease:"easeInOut"
+
+});
+
+ k.to("#one, #two",{
+
+    scrollTrigger:{
+        trigger:"#box",
+        
+        start:"top top",
+       
+        
+        scrub:2,
+       
+       
+
+    },
+    left:"-50%",
+  
+   
+    ease:"easeInOut"
+
+});
+
+k.to("#three, #four",{
+
+    scrollTrigger:{
+        trigger:"#box",
+        
+        start:"top top",
+         
+        
+        scrub:2,
+       
+       
+
+    },
+    left:"50%",
+
+   
+    ease:"easeInOut"
+
+}); 
+
+
+        </script>
+</body>
+</html>
